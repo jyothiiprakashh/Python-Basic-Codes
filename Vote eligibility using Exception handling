@@ -1,0 +1,12 @@
+~ try:
+    age = int(input('Please enter the age: '))
+    
+    if age >= 18:
+        print('Congratulations. You are eligible to vote !')
+    else:
+        print('Sorry. You are not eligible to vote.')
+except Exception as e:
+    print(type(e).__name__)
+    print(e)
+finally:
+    print('program completed')
